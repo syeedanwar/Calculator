@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.calculator {
+  width: 420px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.heading h1 {
+  color: #00e6ff;
+  font-size: 22px;
+}
+
+#display {
+  width: 100%;
+  height: 80px;
+  font-size: 2.5em;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+  background: black;
+  color: #00ffcc;
+}
+
+.history-btn {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 10px;
+  background: #111;
+  color: #00e6ff;
+  border: 1px solid #00e6ff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.clear-history-btn {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 8px;
+  background: #ff3c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.clear-history-btn:hover {
+  background: white;
+  color: #ff3c3c;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 65px;
+  font-size: 22px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: black;
+  color: #00e6ff;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #00e6ff;
+  color: black;
+}
+
+.operator {
+  color: #ffd700;
+}
+
+.equal-btn {
+  background: #ff3c3c;
+  color: white;
+}
+
+.equal-btn:hover {
+  background: white;
+  color: #ff3c3c;
+}
+
+#historyBox {
+  display: none;
+  margin-top: 10px;
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 120px;
+  overflow-y: auto;
+  color: #00ffcc;
+}
+
+#historyList {
+  list-style: none;
+}
+
+#historyList li {
+  padding: 3px 0;
+}
